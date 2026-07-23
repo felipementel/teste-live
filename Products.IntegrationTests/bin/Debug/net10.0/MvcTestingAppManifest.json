@@ -1,6 +1,6 @@
 {
-  "Products.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\copilot\\live-highexpert-ex2\\Products.Api",
-  "Products.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\copilot\\live-highexpert-ex2\\Products.Application",
-  "Products.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\copilot\\live-highexpert-ex2\\Products.Domain",
-  "Products.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\copilot\\live-highexpert-ex2\\Products.Infrastructure"
+  "Products.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/home\/runner\/work\/teste-live\/teste-live\/Products.Api",
+  "Products.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/home\/runner\/work\/teste-live\/teste-live\/Products.Application",
+  "Products.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/home\/runner\/work\/teste-live\/teste-live\/Products.Domain",
+  "Products.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/home\/runner\/work\/teste-live\/teste-live\/Products.Infrastructure"
 }
