@@ -107,6 +107,7 @@ permissions:
   contents: read
   issues: read
   pull-requests: read
+  copilot-requests: write #https://github.blog/changelog/2026-06-11-agentic-workflows-no-longer-need-a-personal-access-token/
 
 # Tools - GitHub API access via toolsets (context, repos, issues, pull_requests)
 tools:
