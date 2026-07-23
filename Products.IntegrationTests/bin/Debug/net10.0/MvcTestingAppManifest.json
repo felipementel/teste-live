@@ -1,0 +1,6 @@
+{
+  "Products.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\copilot\\live-highexpert-ex2\\Products.Api",
+  "Products.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\copilot\\live-highexpert-ex2\\Products.Application",
+  "Products.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\copilot\\live-highexpert-ex2\\Products.Domain",
+  "Products.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\copilot\\live-highexpert-ex2\\Products.Infrastructure"
+}
