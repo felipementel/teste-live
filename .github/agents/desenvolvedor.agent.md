@@ -5,7 +5,7 @@ argument-hint: Forneça a demanda estruturada e a arquitetura técnica validada.
 tools: [execute, read, edit, search, todo]
 handoffs:
   - label: Validar entrega e CI/CD
-    agent: devops
+    agent: 4 - DevOps
     prompt: Valide a implementação concluída, execute as verificações necessárias e avalie se a esteira do GitHub Actions precisa ser alterada.
     send: true
 ---
