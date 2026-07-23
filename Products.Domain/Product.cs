@@ -9,4 +9,6 @@ public class Product
     public int Stock { get; set; }
     public DateTimeOffset CreatedAtUtc { get; set; }
     public DateTimeOffset UpdatedAtUtc { get; set; }
+
+    public string data { get; set; }
 }
