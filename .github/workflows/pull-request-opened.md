@@ -1,7 +1,7 @@
 ---
 # Trigger - when should this workflow run?
-on:
-  workflow_dispatch:  # Manual trigger
+# on:
+#   workflow_dispatch:  # Manual trigger
 
 # Alternative triggers (uncomment to use):
 # on:
@@ -15,10 +15,10 @@ on:
 # Permissions - what can this workflow access?
 # Write operations (creating issues, PRs, comments, etc.) are handled
 # automatically by the safe-outputs job with its own scoped permissions.
-permissions:
-  contents: read
-  issues: read
-  pull-requests: read
+# permissions:
+#   contents: read
+#   issues: read
+#   pull-requests: read
 
 # Tools - GitHub API access via toolsets (context, repos, issues, pull_requests)
 # tools:
@@ -26,12 +26,12 @@ permissions:
 #     toolsets: [default]
 
 # Network access
-network: defaults
+# network: defaults
 
 # Outputs - what APIs and tools can the AI use?
-safe-outputs:
-  create-issue:          # Creates issues (default max: 1)
-    max: 5               # Optional: specify maximum number
+# safe-outputs:
+#   create-issue:          # Creates issues (default max: 1)
+#     max: 5               # Optional: specify maximum number
   # actions:
   # activation-comments:
   # add-comment:
@@ -49,12 +49,16 @@ safe-outputs:
   # concurrency-group:
   # create-agent-session:
   # create-agent-task:
+  # create-check-run:
   # create-code-scanning-alert:
   # create-discussion:
   # create-project:
   # create-project-status-update:
   # create-pull-request:
   # create-pull-request-review-comment:
+  # dismiss-pull-request-review:
+  # dismiss-review:
+  # dispatch-repository:
   # dispatch-workflow:
   # dispatch_repository:
   # environment:
@@ -74,6 +78,7 @@ safe-outputs:
   # noop:
   # push-to-pull-request-branch:
   # remove-labels:
+  # replace-label:
   # reply-to-pull-request-review-comment:
   # report-failure-as-issue:
   # report-incomplete:
@@ -92,24 +97,47 @@ safe-outputs:
   # update-release:
   # upload-artifact:
   # upload-asset:
+  # urls:
 
+name: Open Pull Request Handler
+on:
+  pull_request:
+    types: [opened]
+permissions:
+  contents: read
+  issues: read
+  pull-requests: read
+
+# Tools - GitHub API access via toolsets (context, repos, issues, pull_requests)
+tools:
+  github:
+    toolsets: [default]
+
+# Network access
+network: defaults
+
+# Outputs - what APIs and tools can the AI use?
+safe-outputs:
+  create-issue:          # Creates issues (default max: 1)
+    max: 5               # Optional: specify maximum number
+  mentions:             # Mentions users in comments or issues
+    max: 5               # Optional: specify maximum number
+  add-comment:          # Adds comments to issues or PRs
+    max: 5               # Optional: specify maximum number
+  add-labels:           # Adds labels to issues or PRs
+    max: 5               # Optional: specify maximum number
+  assign-to-user:
 ---
 
 # pull-request-opened
 
-Describe what you want the AI to do when this workflow runs.
+Faça ao code review do pull request aberto, fornecendo feedback e sugestões de melhorias. Analise o código, identifique problemas potenciais, e sugira alterações ou melhorias. Certifique-se de que o código segue as melhores práticas e padrões do projeto.
 
 ## Instructions
 
-Replace this section with specific instructions for the AI. For example:
+Forneça um feedback detalhado sobre o pull request, incluindo:
+- Pontos fortes do código.
+- Áreas que podem ser melhoradas.
+- Sugestões de refatoração ou otimização.
 
-1. Read the issue description and comments
-2. Analyze the request and gather relevant information
-3. Provide a helpful response or take appropriate action
-
-Be clear and specific about what the AI should accomplish.
-
-## Notes
-
-- Run `gh aw compile` to generate the GitHub Actions workflow
-- See https://github.github.com/gh-aw/ for complete configuration options and tools documentation
+IMPORTANTE: Todas as novas variaveis precisam começar com o prefixo "fe_" para evitar conflitos com variáveis existentes. Por exemplo, use `fe_newVariable` em vez de `newVariable`.
