@@ -12,6 +12,10 @@ safe-outputs:
     max: 2
   create-issue:
     max: 10
+
+network:
+  allowed:
+    - defaults
 ---
 
 # Issue Triage Assistant
