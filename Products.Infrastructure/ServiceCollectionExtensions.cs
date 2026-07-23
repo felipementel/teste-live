@@ -29,6 +29,7 @@ public static class ServiceCollectionExtensions
         }
 
         services.AddScoped<IProductRepository, EfCoreProductRepository>();
+        services.AddScoped<ICategoryRepository, EfCoreCategoryRepository>();
         return services;
     }
 }
