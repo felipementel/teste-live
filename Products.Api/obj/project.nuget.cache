@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Vf8sW9TjyU0=",
+  "dgSpecHash": "ynENcrbr34E=",
   "success": true,
   "projectFilePath": "/home/runner/work/teste-live/teste-live/Products.Api/Products.Api.csproj",
   "expectedPackageFiles": [
@@ -35,7 +35,7 @@
     "/home/runner/.nuget/packages/microsoft.identitymodel.protocols/7.7.1/microsoft.identitymodel.protocols.7.7.1.nupkg.sha512",
     "/home/runner/.nuget/packages/microsoft.identitymodel.protocols.openidconnect/7.7.1/microsoft.identitymodel.protocols.openidconnect.7.7.1.nupkg.sha512",
     "/home/runner/.nuget/packages/microsoft.identitymodel.tokens/7.7.1/microsoft.identitymodel.tokens.7.7.1.nupkg.sha512",
-    "/home/runner/.nuget/packages/microsoft.openapi/2.0.0/microsoft.openapi.2.0.0.nupkg.sha512",
+    "/home/runner/.nuget/packages/microsoft.openapi/2.7.5/microsoft.openapi.2.7.5.nupkg.sha512",
     "/home/runner/.nuget/packages/microsoft.sqlserver.server/1.0.0/microsoft.sqlserver.server.1.0.0.nupkg.sha512",
     "/home/runner/.nuget/packages/microsoft.visualstudio.solutionpersistence/1.0.52/microsoft.visualstudio.solutionpersistence.1.0.52.nupkg.sha512",
     "/home/runner/.nuget/packages/mono.texttemplating/3.0.0/mono.texttemplating.3.0.0.nupkg.sha512",
@@ -77,18 +77,6 @@
       "warningLevel": 1,
       "filePath": "/home/runner/work/teste-live/teste-live/Products.Api/Products.Api.csproj",
       "libraryId": "Microsoft.EntityFrameworkCore.Relational",
-      "targetGraphs": [
-        "net10.0"
-      ]
-    },
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "message": "Package 'Microsoft.OpenApi' 2.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-v5pm-xwqc-g5wc",
-      "projectPath": "/home/runner/work/teste-live/teste-live/Products.Api/Products.Api.csproj",
-      "warningLevel": 1,
-      "filePath": "/home/runner/work/teste-live/teste-live/Products.Api/Products.Api.csproj",
-      "libraryId": "Microsoft.OpenApi",
       "targetGraphs": [
         "net10.0"
       ]
